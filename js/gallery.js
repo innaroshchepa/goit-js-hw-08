@@ -71,16 +71,19 @@ galleryContainer.addEventListener('click', onImgClick);
 function createGalleryItemsMarkup(items) {
   return items
     .map(({ preview, original, description }) => {
-      return `<div class="main__item">
-  
-    <img
-      class="main__image"
-      src="${preview}"
-      data-source="${original}"
-      alt="${description}"
-    />
+      return `<li class="gallery-item">
+      <a class="gallery-link" href="large-image.jpg">
+      <img
+        class="gallery-image"
+        src="small-image.jpg"
+        data-source="large-image.jpg"
+        alt="Image description"
+      />
+  </a>
+</li>
   
 </div>`;
+      
     })
     .join('');
 }
