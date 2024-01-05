@@ -80,9 +80,7 @@ function createGalleryItemsMarkup(items) {
         alt="${description}"
       />
   </a>
-</li>
-  
-</div>`;
+</li>;
       
     })
     .join('');
